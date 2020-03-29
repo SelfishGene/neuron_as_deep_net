@@ -1,0 +1,49 @@
+// init.hoc created by editing with ModelDB's accession number 3343 rundemo.hoc
+
+chdir("simulationcode")
+
+//----------------------------------------------------------------------------
+//  define a panel to run the different demos
+//----------------------------------------------------------------------------
+
+proc make_demopanel() {
+	xpanel("Simulations of Neocortical Layer 5b Pyramidal Cells. Hay et al. 2011")
+	xlabel("Figure 4 (constrained both for BAC and current step firing)")
+	xbutton("Fig 4A. (BAC_firing.hoc)","restart(\"BAC_firing\")")
+	xbutton("Fig 4B. Upper trace. (Step_current_firing.hoc)","restart(\"Step_current_firing\")")
+	xbutton("Fig 5A. (critical_frequency.hoc)","restart(\"critical_frequency\")")
+	xpanel()
+}
+
+make_demopanel()
+
+ismenu=0
+
+load_file("nrngui.hoc")
+
+strdef tstr
+
+pwmcnt = PWManager[0].count  // the initial GUIs should not be dismissed
+ismenu=0		// determines if electrode is defined
+
+proc restart() { local i
+	forall delete_section()
+
+	for i=0, n_graph_lists-1 {
+		graphList[i].remove_all()
+	}
+	flush_list.remove_all()
+	fast_flush_list.remove_all()
+	doNotify()
+	for (i= PWManager[0].count-1; i >= pwmcnt; i -= 1) {
+		PWManager[0].close(i)
+		doNotify()
+	}
+	stoprun = 0
+	cvode_active(0)
+
+	ismenu=0
+	
+	sprint(tstr, "%s.hoc", $s1)
+	load_file(1, tstr)
+}
