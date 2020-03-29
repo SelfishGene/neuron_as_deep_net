@@ -1,7 +1,7 @@
 # Single Cortical Neurons as Deep Networks  
 This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.biorxiv.org/content/10.1101/613141v2)"  
 
-![single neuron as deep net illustration](https://imgur.com/pC2VHDy)
+![single neuron as deep net illustration](https://user-images.githubusercontent.com/11506338/77857795-71a27b00-7208-11ea-937a-74cb6e414281.PNG)
 
 **Single Cortical Neurons as Deep Artificial Neural Networks**  
 David Beniaguev, Idan Segev, Michael London
