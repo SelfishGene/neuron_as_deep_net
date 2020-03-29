@@ -38,7 +38,7 @@ Twitter thread for short visual summery: [https://twitter.com/DavidBeniaguev/sta
 ## Acknowledgements
 We thank Oren Amsalem, Guy Eyal, Michael Doron, Toviah Moldwin, Yair Deitcher, Eyal Gal and all lab members of the Segev and London Labs for many fruitful discussions and valuable feedback regarding this work.
 
-If you use this dataset, please cite the following two works:  
+If you use this code or dataset, please cite the following two works:  
 
 1. David Beniaguev, Idan Segev and Michael London. 2019. “Single Cortical Neurons as Deep Artificial Neural Networks.” BioRxiv, 613141. doi:10.1101/613141.
 1. Hay, Etay, Sean Hill, Felix Schürmann, Henry Markram, and Idan Segev. 2011. “Models of Neocortical
