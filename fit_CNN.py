@@ -37,9 +37,9 @@ print('------------------------------------------------------------------')
 # ------------------------------------------------------------------
 # basic configurations and directories
 # ------------------------------------------------------------------
-#synapse_type = 'NMDA'
+synapse_type = 'NMDA'
 #synapse_type = 'AMPA'
-synapse_type = 'AMPA_SK'
+#synapse_type = 'AMPA_SK'
 
 if synapse_type == 'NMDA':
     num_DVT_components = 20
