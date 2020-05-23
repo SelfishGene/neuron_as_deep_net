@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import glob
 import time
-import cPickle as pickle
+import sys
 import keras
 from keras.models import Model, load_model
 from keras.optimizers import SGD, Nadam
@@ -14,6 +14,15 @@ from keras.regularizers import l1,l2,l1_l2
 from keras import initializers
 from sklearn import decomposition
 
+
+# some fixes for python 3
+if sys.version_info[0]<3:
+    import cPickle as pickle
+else:
+    import pickle
+    basestring = str
+    
+    
 # NOTE: during this project I've changed my coding style
 # and was too lazy to edit the old code to match the new style
 # so please ignore any style related wierdness
@@ -238,7 +247,10 @@ def parse_sim_experiment_file_with_DVT(sim_experiment_file, DVT_PCA_model=None, 
         print("loading file: '" + sim_experiment_file.split("\\")[-1] + "'")
         loading_start_time = time.time()
         
-    experiment_dict = pickle.load(open(sim_experiment_file, "rb" ))
+    if sys.version_info[0]<3:
+        experiment_dict = pickle.load(open(sim_experiment_file, "rb" ))
+    else:
+        experiment_dict = pickle.load(open(sim_experiment_file, "rb" ),encoding='latin1')
     
     # gather params
     num_simulations = len(experiment_dict['Results']['listOfSingleSimulationDicts'])
