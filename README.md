@@ -15,7 +15,10 @@ Notebook with main result: [https://www.kaggle.com/selfishgene/single-neuron-as-
 Notebook exploring the dataset: [https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron](https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron)  
 Twitter thread for short visual summery: [https://twitter.com/DavidBeniaguev/status/1131890349578829825](https://twitter.com/DavidBeniaguev/status/1131890349578829825)  
 
-## Single neuron simulation code
+## Integrate and Fire code
+- Use `integrate_and_fire_figure_replication.py` to simulate, fit, evaluate and replicate the introductory figure in the paper (Fig. 1)
+
+## Single cortical neuron simulation code
 ![single neuron simulation illustration image](https://pbs.twimg.com/media/D7U15SSXoAAM-Js?format=jpg&name=4096x4096)
 - Use `simulate_L5PC_and_create_dataset.py` to simulate a single neuron
   - All major parameters are documented inside the file using comments  
