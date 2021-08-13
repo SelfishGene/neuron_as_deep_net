@@ -1,7 +1,7 @@
 # Single Cortical Neurons as Deep Networks  
 This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)"  
 
-![Graphical Abstract](https://ibb.co/SxJvsg1)
+![Graphical Abstract](https://i.im.ge/2021/08/13/mybwx.png)
 
 **Single Cortical Neurons as Deep Artificial Neural Networks**  
 David Beniaguev, Idan Segev, Michael London
@@ -16,8 +16,9 @@ Notebook with main result: [https://www.kaggle.com/selfishgene/single-neuron-as-
 Notebook exploring the dataset: [https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron](https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron)  
 Twitter thread for short visual summery: [https://twitter.com/DavidBeniaguev/status/1131890349578829825](https://twitter.com/DavidBeniaguev/status/1131890349578829825)  
 Figure360, author presentation of Figure 2 from the paper: [https://www.youtube.com/watch?v=n2xaUjdX03g](https://www.youtube.com/watch?v=n2xaUjdX03g)  
+  
 
-![single neuron as deep net illustration](https://user-images.githubusercontent.com/11506338/77857795-71a27b00-7208-11ea-937a-74cb6e414281.PNG)
+![single neuron as deep net illustration](https://user-images.githubusercontent.com/11506338/77857795-71a27b00-7208-11ea-937a-74cb6e414281.PNG)  
 
 ## Integrate and Fire code
 - Use `integrate_and_fire_figure_replication.py` to simulate, fit, evaluate and replicate the introductory figure in the paper (Fig. 1)
