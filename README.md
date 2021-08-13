@@ -1,19 +1,23 @@
 # Single Cortical Neurons as Deep Networks  
-This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.biorxiv.org/content/10.1101/613141v2)"  
+This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)"  
 
-![single neuron as deep net illustration](https://user-images.githubusercontent.com/11506338/77857795-71a27b00-7208-11ea-937a-74cb6e414281.PNG)
+![Graphical Abstract](https://ibb.co/SxJvsg1)
 
 **Single Cortical Neurons as Deep Artificial Neural Networks**  
 David Beniaguev, Idan Segev, Michael London
 
-Abstract: *We introduce a novel approach to study neurons as sophisticated I/O information processing units by utilizing recent advances in the field of machine learning. We trained deep neural networks (DNNs) to mimic the I/O behavior of a detailed nonlinear model of a layer 5 cortical pyramidal cell, receiving rich spatio-temporal patterns of input synapse activations. A Temporally Convolutional DNN (TCN) with seven layers was required to accurately, and very efficiently, capture the I/O of this neuron at the millisecond resolution. This complexity primarily arises from local NMDA-based nonlinear dendritic conductances. The weight matrices of the DNN provide new insights into the I/O function of cortical pyramidal neurons, and the approach presented can provide a systematic characterization of the functional complexity of different neuron types. Our results demonstrate that cortical neurons can be conceptualized as multi-layered “deep” processing units, implying that the cortical networks they form have a non-classical architecture and are potentially more computationally powerful than previously assumed.*
+Abstract: *Utilizing recent advances in machine learning, we introduce a systematic approach to characterize neurons’ input/output (I/O) mapping complexity. Deep neural networks (DNNs) were trained to faithfully replicate the I/O function of various biophysical models of cortical neurons at millisecond (spiking) resolution. A temporally convolutional DNN with five to eight layers was required to capture the I/O mapping of a realistic model of a layer 5 cortical pyramidal cell (L5PC). This DNN generalized well when presented with inputs widely outside the training distribution. When NMDA receptors were removed, a much simpler network (fully connected neural network with one hidden layer) was sufficient to fit the model. Analysis of the DNNs’ weight matrices revealed that synaptic integration in dendritic branches could be conceptualized as pattern matching from a set of spatiotemporal templates. This study provides a unified characterization of the computational complexity of single neurons and suggests that cortical networks therefore have a unique architecture, potentially supporting their computational power.*
 
 ## Resources
-Paper: [https://www.biorxiv.org/content/10.1101/613141v2](https://www.biorxiv.org/content/10.1101/613141v2)  
+Neuron version of paper: [https://www.sciencedirect.com/science/article/pii/S0896627321005018](https://www.sciencedirect.com/science/article/pii/S0896627321005018)  
+Open Access (slightly older) version of Paper: [https://www.biorxiv.org/content/10.1101/613141v2](https://www.biorxiv.org/content/10.1101/613141v2)  
 Dataset and pretrained networks: [https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data)  
 Notebook with main result: [https://www.kaggle.com/selfishgene/single-neuron-as-deep-net-replicating-key-result](https://www.kaggle.com/selfishgene/single-neuron-as-deep-net-replicating-key-result)  
 Notebook exploring the dataset: [https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron](https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron)  
 Twitter thread for short visual summery: [https://twitter.com/DavidBeniaguev/status/1131890349578829825](https://twitter.com/DavidBeniaguev/status/1131890349578829825)  
+Figure360, author presentation of Figure 2 from the paper: [https://www.youtube.com/watch?v=n2xaUjdX03g](https://www.youtube.com/watch?v=n2xaUjdX03g)  
+
+![single neuron as deep net illustration](https://user-images.githubusercontent.com/11506338/77857795-71a27b00-7208-11ea-937a-74cb6e414281.PNG)
 
 ## Integrate and Fire code
 - Use `integrate_and_fire_figure_replication.py` to simulate, fit, evaluate and replicate the introductory figure in the paper (Fig. 1)
