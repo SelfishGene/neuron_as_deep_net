@@ -1,20 +1,22 @@
 # Single Cortical Neurons as Deep Networks  
-This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)"  
+This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://authors.elsevier.com/a/1dYq23BtfGzkFQ)"  
 
 ![Graphical Abstract](https://i.im.ge/2021/08/13/mybwx.png)
 
-**Single Cortical Neurons as Deep Artificial Neural Networks**  
+## Single Cortical Neurons as Deep Artificial Neural Networks  
 David Beniaguev, Idan Segev, Michael London
 
-Abstract: *Utilizing recent advances in machine learning, we introduce a systematic approach to characterize neurons’ input/output (I/O) mapping complexity. Deep neural networks (DNNs) were trained to faithfully replicate the I/O function of various biophysical models of cortical neurons at millisecond (spiking) resolution. A temporally convolutional DNN with five to eight layers was required to capture the I/O mapping of a realistic model of a layer 5 cortical pyramidal cell (L5PC). This DNN generalized well when presented with inputs widely outside the training distribution. When NMDA receptors were removed, a much simpler network (fully connected neural network with one hidden layer) was sufficient to fit the model. Analysis of the DNNs’ weight matrices revealed that synaptic integration in dendritic branches could be conceptualized as pattern matching from a set of spatiotemporal templates. This study provides a unified characterization of the computational complexity of single neurons and suggests that cortical networks therefore have a unique architecture, potentially supporting their computational power.*
+**Abstract**: *Utilizing recent advances in machine learning, we introduce a systematic approach to characterize neurons’ input/output (I/O) mapping complexity. Deep neural networks (DNNs) were trained to faithfully replicate the I/O function of various biophysical models of cortical neurons at millisecond (spiking) resolution. A temporally convolutional DNN with five to eight layers was required to capture the I/O mapping of a realistic model of a layer 5 cortical pyramidal cell (L5PC). This DNN generalized well when presented with inputs widely outside the training distribution. When NMDA receptors were removed, a much simpler network (fully connected neural network with one hidden layer) was sufficient to fit the model. Analysis of the DNNs’ weight matrices revealed that synaptic integration in dendritic branches could be conceptualized as pattern matching from a set of spatiotemporal templates. This study provides a unified characterization of the computational complexity of single neurons and suggests that cortical networks therefore have a unique architecture, potentially supporting their computational power.*
 
 ## Resources
-Neuron version of paper: [https://www.sciencedirect.com/science/article/pii/S0896627321005018](https://www.sciencedirect.com/science/article/pii/S0896627321005018)  
+Neuron version of paper: [https://www.sciencedirect.com/science/article/pii/S0896627321005018](https://authors.elsevier.com/a/1dYq23BtfGzkFQ)  
 Open Access (slightly older) version of Paper: [https://www.biorxiv.org/content/10.1101/613141v2](https://www.biorxiv.org/content/10.1101/613141v2)  
 Dataset and pretrained networks: [https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data)  
+Dataset for training new models: [https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-train-data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-train-data)  
 Notebook with main result: [https://www.kaggle.com/selfishgene/single-neuron-as-deep-net-replicating-key-result](https://www.kaggle.com/selfishgene/single-neuron-as-deep-net-replicating-key-result)  
 Notebook exploring the dataset: [https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron](https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron)  
-Twitter thread for short visual summery: [https://twitter.com/DavidBeniaguev/status/1131890349578829825](https://twitter.com/DavidBeniaguev/status/1131890349578829825)  
+Twitter thread for short visual summery #1: [https://twitter.com/DavidBeniaguev/status/1131890349578829825](https://twitter.com/DavidBeniaguev/status/1131890349578829825)  
+Twitter thread for short visual summery #2: [https://twitter.com/DavidBeniaguev/status/1426172692479287299](https://twitter.com/DavidBeniaguev/status/1426172692479287299)  
 Figure360, author presentation of Figure 2 from the paper: [https://www.youtube.com/watch?v=n2xaUjdX03g](https://www.youtube.com/watch?v=n2xaUjdX03g)  
   
 
@@ -30,6 +32,13 @@ Figure360, author presentation of Figure 2 from the paper: [https://www.youtube.
   - All necessary NEURON `.hoc` and `.mod` simulation files are under the folder `L5PC_NEURON_simulation\`
 - Use `dataset_exploration.py` to explore the generated dataset
 - Alternativley, just download the [data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data) from kaggle, and look at exploration [script](https://www.kaggle.com/selfishgene/exploring-a-single-cortical-neuron)
+
+### Note: we use the NEURON simulator for the L5PC simulation. More details about NEURON below
+- neuron github repo: [https://github.com/neuronsimulator/nrn](https://github.com/neuronsimulator/nrn)  
+- recommended introductory NEURON tutorial: [https://github.com/orena1/NEURON_tutorial
+](https://github.com/orena1/NEURON_tutorial)  
+- official NEURON with python tutorial: [https://neuron.yale.edu/neuron/static/docs/neuronpython/index.html](https://neuron.yale.edu/neuron/static/docs/neuronpython/index.html)  
+- NEURON help fortum: [https://www.neuron.yale.edu/phpBB/index.php?sid=31f0839c5c63ca79d80790460542bbf3](https://www.neuron.yale.edu/phpBB/index.php?sid=31f0839c5c63ca79d80790460542bbf3)  
 
 ## TCN fitting and evaluation code
 ![fitting TCN to single neurons](https://pbs.twimg.com/media/D7U4O3HWsAI2YKK?format=png&name=900x900)
