@@ -1,5 +1,5 @@
 # Single Cortical Neurons as Deep Networks  
-This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://authors.elsevier.com/a/1dYq23BtfGzkFQ)"  
+This repo contains the code behind the work "[Single Cortical Neurons as Deep Artificial Neural Networks](https://www.cell.com/neuron/fulltext/S0896-6273(21)00501-8)"  
 
 ![Graphical Abstract](https://i.im.ge/2021/08/13/mybwx.png)
 
@@ -9,7 +9,7 @@ David Beniaguev, Idan Segev, Michael London
 **Abstract**: *Utilizing recent advances in machine learning, we introduce a systematic approach to characterize neurons’ input/output (I/O) mapping complexity. Deep neural networks (DNNs) were trained to faithfully replicate the I/O function of various biophysical models of cortical neurons at millisecond (spiking) resolution. A temporally convolutional DNN with five to eight layers was required to capture the I/O mapping of a realistic model of a layer 5 cortical pyramidal cell (L5PC). This DNN generalized well when presented with inputs widely outside the training distribution. When NMDA receptors were removed, a much simpler network (fully connected neural network with one hidden layer) was sufficient to fit the model. Analysis of the DNNs’ weight matrices revealed that synaptic integration in dendritic branches could be conceptualized as pattern matching from a set of spatiotemporal templates. This study provides a unified characterization of the computational complexity of single neurons and suggests that cortical networks therefore have a unique architecture, potentially supporting their computational power.*
 
 ## Resources
-Neuron version of paper: [https://www.sciencedirect.com/science/article/pii/S0896627321005018](https://authors.elsevier.com/a/1dYq23BtfGzkFQ)  
+Neuron version of paper: [https://www.cell.com/neuron/fulltext/S0896-6273(21)00501-8](https://www.cell.com/neuron/fulltext/S0896-6273(21)00501-8)  
 Open Access (slightly older) version of Paper: [https://www.biorxiv.org/content/10.1101/613141v2](https://www.biorxiv.org/content/10.1101/613141v2)  
 Dataset and pretrained networks: [https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-test-data)  
 Dataset for training new models: [https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-train-data](https://www.kaggle.com/selfishgene/single-neurons-as-deep-nets-nmda-train-data)  
